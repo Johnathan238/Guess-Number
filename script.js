@@ -9,7 +9,8 @@
 
 // document.querySelector('.guess').value = 25
 
-const number = Math.trunc(Math.random() * 20)
+const number = Math.trunc(Math.random() * 20) + 1
+document.querySelector('.number').textContent = number
 
 document.querySelector('.check').addEventListener('click', function (){
     const guess = Number(document.querySelector('.guess').value)
@@ -17,5 +18,12 @@ document.querySelector('.check').addEventListener('click', function (){
 
     if(!guess) {
         document.querySelector('.message').textContent = '⚠️ No Number!'
+    }  else if (guess === number){
+        
     }
 })
+
+//Im back i had wisom tooth out
+
+
+
