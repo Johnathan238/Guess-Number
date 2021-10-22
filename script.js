@@ -19,7 +19,7 @@ document.querySelector('.check').addEventListener('click', function (){
     if(!guess) {
         document.querySelector('.message').textContent = '⚠️ No Number!'
     }  else if (guess === number){
-        
+      document.querySelector('.message').textContent = ' ✅ Correct Number!'
     }
 })
 
