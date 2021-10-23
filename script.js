@@ -20,6 +20,10 @@ document.querySelector('.check').addEventListener('click', function (){
         document.querySelector('.message').textContent = '⚠️ No Number!'
     }  else if (guess === number){
       document.querySelector('.message').textContent = ' ✅ Correct Number!'
+    } else if (guess > number){
+      document.querySelector('.message').textContent = ' 📈 Too High'
+    } else if (guess < number) {
+      document.querySelector('.message').textContent = ' 📉 Too Low'
     }
 })
 
