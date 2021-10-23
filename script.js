@@ -10,6 +10,8 @@
 // document.querySelector('.guess').value = 25
 
 const number = Math.trunc(Math.random() * 20) + 1
+
+let score = 20;
 document.querySelector('.number').textContent = number
 
 document.querySelector('.check').addEventListener('click', function (){
@@ -22,12 +24,17 @@ document.querySelector('.check').addEventListener('click', function (){
       document.querySelector('.message').textContent = ' ✅ Correct Number!'
     } else if (guess > number){
       document.querySelector('.message').textContent = ' 📈 Too High'
+      score--
+      document.querySelector('.score').textContent = score
     } else if (guess < number) {
       document.querySelector('.message').textContent = ' 📉 Too Low'
+      score--
+      document.querySelector('.score').textContent = score
     }
 })
 
-//Im back i had wisom tooth out
+
+
 
 
 
