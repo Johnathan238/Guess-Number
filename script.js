@@ -58,8 +58,12 @@ document.querySelector('.check').addEventListener('click', function (){
 })
 
 document.querySelector('.again').addEventListener('click', function () {
-  document.querySelector('.number').textContent = number
+  // document.querySelector('.number').textContent = number
+  document.querySelector('.guess').value = 0
+  document.querySelector('.number').style.width = '15rem'
   document.querySelector('body').style.backgroundColor = '#222'
+  document.querySelector('.message').textContent = 'Start guessing...'
+  document.querySelector('.score').textContent = 20
 })
 
 
