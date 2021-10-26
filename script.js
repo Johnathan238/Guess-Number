@@ -57,6 +57,11 @@ document.querySelector('.check').addEventListener('click', function (){
     }
 })
 
+document.querySelector('.again').addEventListener('click', function () {
+  document.querySelector('.number').textContent = number
+  document.querySelector('body').style.backgroundColor = '#222'
+})
+
 
 
 
