@@ -72,7 +72,6 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.score').textContent = 20
 })
 
-// Implementing Highscore
 
 
 
